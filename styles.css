@@ -30,9 +30,13 @@ p {
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 0;
 }
 
 nav {
@@ -558,8 +562,3 @@ th:last-child {
   background-color: #0077B3;
 }
 
-.dropdown-menu {
-  position: absolute;
-  z-index: 2;
-  /* set a higher z-index value */
-}
