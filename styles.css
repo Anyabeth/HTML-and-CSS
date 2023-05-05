@@ -557,3 +557,9 @@ th:last-child {
 .add-to-cart:hover {
   background-color: #0077B3;
 }
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 2;
+  /* set a higher z-index value */
+}
