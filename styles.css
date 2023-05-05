@@ -499,7 +499,6 @@ th:last-child {
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
-  /* add any other styles you want here */
 }
 
 /* contact page*/
@@ -515,6 +514,8 @@ th:last-child {
 .contact {
   width: 90%;
   padding: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .image {
@@ -523,6 +524,8 @@ th:last-child {
   display: flex;
   justify-content: right;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 
 @media screen and (max-width: 768px) {
