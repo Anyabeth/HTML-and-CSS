@@ -63,6 +63,53 @@ nav ul li {
   justify-content: space-around;
 }
 
+/* Navbar */
+
+.navbar {
+  background-color: #d9f8fd;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 999;
+  /* add a higher z-index value */
+}
+
+.navbar a {
+  color: #555;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  color: #333;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+  /* add a higher z-index value */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  /* add a higher z-index value */
+  background-color: #fff5f5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  top: 60px;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
   /*---------*/
 
   /* logo */
@@ -111,80 +158,25 @@ nav ul li {
   background: #563434;
 }
 
+/* add to cart button */
 
-/*---------footer-------*/
-
-.footer {
-  position: absolute;
-  bottom: 5;
-  left: 0;
-  width: 100%;
-  background: #000;
-  color: #8a8a8a;
-  font-size: 14px;
-  padding: 60px 0 20px;
-}
-
-.footer p {
-  color: #8a8a8a;
-}
-
-.footer h3 {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.footer-col1,
-.footer-col2,
-.footer-col3,
-.footer-col4 {
-  min-width: 250px;
-  margin-bottom: 20px;
-}
-
-.footer-col1 {
-  flex-basis: 30%;
-}
-
-.footer-col2 {
-  flex: 1;
-  text-align: center;
-}
-
-.footer-col2 img {
-  width: 180px;
-  margin-bottom: 20px;
-}
-
-.footer-col3,
-.footer-col4 {
-  flex-basis: 12%;
-  text-align: center;
-}
-
-.app-logo {
-  margin-top: 20px;
-}
-
-.app-logo img {
-  width: 140px;
-}
-
-.footer li {
-  display: block;
-}
-
-.footer hr {
+.add-to-cart {
+  background-color: #008CBA;
   border: none;
-  background: #b5b5b5;
-  height: 1px;
-  margin: 20px 0;
-}
-
-.copyright {
+  color: white;
+  padding: 10px 20px;
   text-align: center;
-
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+.add-to-cart:hover {
+  background-color: #0077B3;
+}
+
 
 /*-------media-query-for-max-width-800---------*/
 
@@ -432,6 +424,7 @@ th:last-child {
 
 
 
+
 /*--------------------testimonial---------------*/ 
 
 .testimonial {
@@ -487,15 +480,30 @@ th:last-child {
   transform: translate(-50%, -50%);
   width: 100%;
   max-height: 100%;
+  z-index: 1;
 }
 
-.body-about-us-page, h1.page-title {
+.body-about-us-page,
+h1.page-title {
   position: absolute;
   font-size: 30px;
   color: #1a1919;
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* About and Contact Image */
+
+.image.header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  /* set a lower z-index value */
 }
 
 /* contact page*/
@@ -532,30 +540,77 @@ th:last-child {
   }
 }
 
-/* add to cart button */
 
-.add-to-cart {
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
+/*---------footer-------*/
 
-.add-to-cart:hover {
-  background-color: #0077B3;
-}
-
-/* contact page */
-
-.image {
-  background-image: url("office3.png");
-  background-size: cover;
-  height: 400px;
+.footer {
+  position: absolute;
+  bottom: 5;
+  left: 0;
   width: 100%;
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col1,
+.footer-col2,
+.footer-col3,
+.footer-col4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col1 {
+  flex-basis: 30%;
+}
+
+.footer-col2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col3,
+.footer-col4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.footer li {
+  display: block;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+
 }
