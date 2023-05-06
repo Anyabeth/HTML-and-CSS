@@ -174,7 +174,7 @@ nav ul li {
 }
 
 .add-to-cart:hover {
-  background-color: #0077B3;
+  background-color: #1e7fee;
 }
 
 
@@ -369,7 +369,7 @@ table {
 th {
   text-align: left;
   padding: 5px;
-  color: #fff;
+  color: #ffffff;
   background: #17191a;
   font-weight: normal;
 }
