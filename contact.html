@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,78 +23,36 @@
 </head>
 <body>
     <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="logo.svg" width="125px"alt="rainydays logo"></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems" style="max-height: 0px;">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="men.html">Men</a></li>
-                        <li><a href="women.html">Women</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
-                <img src="menu.png" onclick="menutoggle()" class="menu-icon">
-            </div>
-<div class="content">
-    <div class="image">
-        <img src="office3.png"alt="office picture">
-    </div>
-    <main>
-        <div class="content">
-            <main>
-                <div class="contact">
-                    <form>
-                        <fieldset>
-                            <legend>Your details:</legend>
-                            <label>
-                                Name:
-                                <input type="text" name="name" size="30" maxlength="100">
-                            </label>
-                            <br>
-                            <label>
-                                Email:
-                                <input type="email" name="email" size="30" maxlength="100">
-                            </label>
-                            <br>
-                        </fieldset>
-                        <br>
-                        <fieldset>
-                            <legend>Your Review:</legend>
-                            <p>
-                                <label for="Hear-about">How did you hear about us?</label>
-                                <select name="referrer" id="hear about">
-                                    <option value="google">Google</option>
-                                    <option value="friend">Friend</option>
-                                    <option value="advert">Advert</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </p>
-                            <p>
-                                Would you visit again?
-                                <br>
-                                <label><input type="radio" name="rating" value="yes"> Yes</label>
-                                <label><input type="radio" name="rating" value="no"> No</label>
-                                <label><input type="radio" name="rating" value="maybe"> Maybe</label>
-                            </p>
-                            <p>
-                                <label for="comments">Comments:</label>
-                                <br>
-                                <textarea rows="4" cols="40" id="comments"></textarea>
-                            </p>
-                            <label><input type="checkbox" name="subscribe" checked> Sign me up for email updates</label>
-                            <br>
-                            <input type="submit" value="Submit review">
-                        </fieldset>
-                    </form>
-                </div>
-            </main>
+        <div class="navbar"></div>
+        <div class="logo">
+            <a href="index.html"><img src="logo.svg" width="125px" alt="rainydays logo"></a>
         </div>
-    </main>
+        <nav>
+            <ul id="MenuItems" style="max-height: 0px;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu.png" onclick="menutoggle()" class="menu-icon">
+    </div>
+    <div class="container-box">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact us</h2>
+                <input type="text" class="field" placeholder="your name">
+                <input type="email" class="field" placeholder="your email">
+                <input type="text" class="field" placeholder="your phone">
+                <textarea class="field area" placeholder="message"></textarea>
+                <button class="btn-2">Send</button>
+            </div>
+        </div>
+    </div>
+
     <!----------Footer--------------->
     
     <div class="footer">
