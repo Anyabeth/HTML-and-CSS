@@ -280,8 +280,6 @@ select:focus {
 }
 
 
-
-
 /*---------product details-----------*/
 
 
@@ -295,7 +293,7 @@ select:focus {
   padding: 0;
 }
 
-.single-product .col-2 {
+.single-product .col-4 {
   padding: 20px;
 }
 
@@ -321,8 +319,18 @@ select:focus {
 }
 
 .col-4 img{
+  width: 400px;
+  height: auto;
+}
+
+.col-9 {
   width: 100px;
   height: auto;
+  float: right;
+}
+
+.col-9 img{
+width: 100px;
 }
 
 input:focus {
@@ -447,7 +455,7 @@ th:last-child {
 /*--------------------about us---------------*/ 
 
 .testimonial {
-  padding-top: 100px;
+  padding-top: 300px;
   margin-bottom: 80;
 }
 
@@ -522,17 +530,15 @@ h1.page-title {
 
 /* contact us */
 
-
-
 .container-box {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 150%;
   height: 30%;
   padding: 20px 100px;
-  left: 100px;
+  left: -128px;
   right: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
