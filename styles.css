@@ -455,7 +455,7 @@ th:last-child {
 /*--------------------about us---------------*/ 
 
 .testimonial {
-  padding-top: 300px;
+  padding-top: 250px;
   margin-bottom: 80;
 }
 
@@ -505,7 +505,7 @@ th:last-child {
 
 .image.header img {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
