@@ -77,7 +77,6 @@ nav ul li {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 999;
-  /* add a higher z-index value */
 }
 
 .navbar a {
@@ -89,8 +88,6 @@ nav ul li {
 .navbar a:hover {
   color: #333;
 }
-
-
 
 
 /* Dropdown Menu */
@@ -116,11 +113,6 @@ nav ul li {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-
-
-
-  /*---------*/
 
   /* logo */
 
@@ -294,9 +286,9 @@ select:focus {
 
 
 .single-product {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 500px;
-  left: 100px;
+  left: 0px;
 }
 
 .single-product .col-2 img {
@@ -337,6 +329,10 @@ input:focus {
   outline: none;
 }
 
+.single-product .fa {
+  color: #b4a3a1;
+  margin-left: 10px;
+}
 
 .small-img-row {
   display: flex;
@@ -344,9 +340,10 @@ input:focus {
 }
 
 .small-img-col {
-  flex-basis: 30%;
+  flex-basis: 20%;
   cursor: pointer;
 }
+
 
 
 
@@ -450,8 +447,8 @@ th:last-child {
 /*--------------------about us---------------*/ 
 
 .testimonial {
-  padding-top: 350px;
-  margin-bottom: 50;
+  padding-top: 100px;
+  margin-bottom: 80;
 }
 
 .testimonial .col-3 {
@@ -463,18 +460,18 @@ th:last-child {
 }
 
 .testimonial .col-3 img {
-  width: 60px;
-  margin-top: 20px;
+  width: 40px;
+  margin-top: 50px;
   border-radius: 50%;
 }
 
 .fa.fa-quote-left {
-  font-size: 44px;
+  font-size: 34px;
   color: #176c77;
 }
 
 .col-3 p {
-  font-size: 14px;
+  font-size: 12px;
   margin: 12px 0px;
   color: #000000;
 }
@@ -500,7 +497,7 @@ th:last-child {
 
 .image.header img {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -513,7 +510,7 @@ h1.page-title {
   position: absolute;
   font-size: 30px;
   color: #1a1919;
-  top: 28%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -532,11 +529,11 @@ h1.page-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110%;
+  width: 90%;
   height: 30%;
   padding: 20px 100px;
-  left: -45px;
-  right: 10px;
+  left: 100px;
+  right: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
