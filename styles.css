@@ -75,7 +75,7 @@ nav ul li {
 }
 
 .navbar a {
-  color: #555;
+  color: #1d1212;
   text-decoration: none;
   padding: 10px;
 }
@@ -90,15 +90,13 @@ nav ul li {
   position: relative;
   display: inline-block;
   z-index: 1000;
-  /* add a higher z-index value */
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: right;
   z-index: 1000;
-  /* add a higher z-index value */
-  background-color: #fff5f5;
+  background-color: #eed6d6;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
@@ -161,9 +159,9 @@ nav ul li {
 /* add to cart button */
 
 .add-to-cart {
-  background-color: #008CBA;
+  background-color: #296fda;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -174,7 +172,7 @@ nav ul li {
 }
 
 .add-to-cart:hover {
-  background-color: #1e7fee;
+  background-color: #2587f8;
 }
 
 
@@ -428,8 +426,8 @@ th:last-child {
 /*--------------------about us---------------*/ 
 
 .testimonial {
-  padding-top: 90px;
-  margin-bottom: 90;
+  padding-top: 200px;
+  margin-bottom: 70;
 }
 
 .testimonial .col-3 {
@@ -448,18 +446,18 @@ th:last-child {
 
 .fa.fa-quote-left {
   font-size: 34px;
-  color: #62979e;
+  color: #176c77;
 }
 
 .col-3 p {
   font-size: 12px;
   margin: 12px 0px;
-  color: #777;
+  color: #000000;
 }
 
 .testimonial .col-3 h3 {
   font-weight: 600;
-  color: #555;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -468,20 +466,26 @@ th:last-child {
 }
 
 .image.header {
-  position: relative;
-  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
   height: 400px;
-  /* set the height of the image container */
 }
 
 .image.header img {
   position: absolute;
-  top: 50%;
+  top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   max-height: 100%;
   z-index: 1;
+}
+
+.other-text {
+  margin-top: 100px; /* adjust value as needed */
 }
 
 .body-about-us-page,
