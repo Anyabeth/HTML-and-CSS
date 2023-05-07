@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +20,6 @@
         }
     </script>
 </head>
-
 <body>
     <div class="header">
         <div class="container">
@@ -41,29 +39,51 @@
                 <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
                 <img src="menu.png" onclick="menutoggle()" class="menu-icon">
             </div>
-            <!----------------- title -------------->
 
-            <div class="row">
-                <div class="col-4">
-                    <img src="redjacket1.png" alt="Red jacket">
-                    <h4>Red jacket</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
+            
+<!----------product--------------->
+            
+<a href="women.html">
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="product1.png" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="purplejacket2.png" class="small-img" width="100%">
                     </div>
-                    <p>$50.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="small-img-col">
+                        <img src="purplejacket3.png" class="small-img" width="100%">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="purplejacket4.png" class="small-img" width="100%">
+                    </div>
                 </div>
-            <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>→</span>
+            </div>
+            <div class="col-2">
+                <p>Women / jacket</p>
+                <h1>Purple jacket</h1>
+                <h4>$50.00</h4>
+
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Midium</option>
+                    <option>Small</option>
+                </select>
+
+                <input type="number" value="1">
+                <a href="cart.html" class="btn">Add To Cart</a>
+
+                <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>best jaket ever made</p>
             </div>
         </div>
+    </div>
+</a>
 
 
 <!----------Footer--------------->
@@ -105,6 +125,5 @@
             </div>
         </div>
     </div>
-
 </div>
 </body>

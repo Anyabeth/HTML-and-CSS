@@ -294,7 +294,9 @@ select:focus {
 
 
 .single-product {
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 500px;
+  left: 100px;
 }
 
 .single-product .col-2 img {
@@ -327,7 +329,7 @@ select:focus {
 }
 
 .col-4 img{
-  width: 300px;
+  width: 100px;
   height: auto;
 }
 
@@ -335,10 +337,6 @@ input:focus {
   outline: none;
 }
 
-.single-product .fa {
-  color: #b4a3a1;
-  margin-left: 10px;
-}
 
 .small-img-row {
   display: flex;
@@ -346,10 +344,9 @@ input:focus {
 }
 
 .small-img-col {
-  flex-basis: 20%;
+  flex-basis: 30%;
   cursor: pointer;
 }
-
 
 
 
@@ -453,7 +450,7 @@ th:last-child {
 /*--------------------about us---------------*/ 
 
 .testimonial {
-  padding-top: 200px;
+  padding-top: 350px;
   margin-bottom: 50;
 }
 
@@ -472,12 +469,12 @@ th:last-child {
 }
 
 .fa.fa-quote-left {
-  font-size: 34px;
+  font-size: 44px;
   color: #176c77;
 }
 
 .col-3 p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 12px 0px;
   color: #000000;
 }
@@ -516,7 +513,7 @@ h1.page-title {
   position: absolute;
   font-size: 30px;
   color: #1a1919;
-  top: 33%;
+  top: 28%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -535,11 +532,11 @@ h1.page-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 110%;
   height: 30%;
   padding: 20px 100px;
-  left: 500px;
-  right: 200px;
+  left: -45px;
+  right: 10px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -637,15 +634,7 @@ h1.page-title {
   background-color: #27ae60;
 }
 
-@media screen and (max-width:800px) {
-  .contact-box {
-    grid-template-columns: 1fr;
-  }
 
-  .left {
-    height: 200px;
-  }
-}
 
 /*---------footer-------*/
 
