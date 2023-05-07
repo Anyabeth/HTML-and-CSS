@@ -639,9 +639,9 @@ th:last-child {
 .body-about-us-page,
 h1.page-title {
   position: absolute;
-  font-size: 30px;
+  font-size: 35px;
   color: #1a1919;
-  top: 38%;
+  top: 48%;
   left: 50%;
   transform: translateX(-50%);
 }
